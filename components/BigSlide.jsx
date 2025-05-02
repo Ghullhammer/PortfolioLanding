@@ -6,13 +6,14 @@ export default function BigSlide(props){
             <div className="relative">
                 <div className={`flex text-black px-60 py-16 text-left h-[70%] justify-between  `} style={{ backgroundColor: props.backColor }}>
                     <div>
-                        <h1 className="text-9xl font-bold mb-4">Головна.</h1>
+                        <h1 className="text-9xl font-bold mb-4">{props.labelText}</h1>
                         <p className="font-mono text-2xl mb-6 ">
-                            Фулл-стек програміст з Одеси, Україна
+                            {props.labelDesc}
                         </p>
-                        <button className="bg-black text-white px-4 py-2 border border-white text-2xl">
-                            Зв’яжись зі мною!
-                        </button>
+                        <div>
+                            {props.children}
+                        </div>
+                        
                     </div>
                     <div className="justify-center items-center self-center">
                         <div className="flex bg-black w-160 h-80 "></div>

@@ -2,15 +2,20 @@
 
 export default function Header(props){
 
-    let linkNames = ["Головна", "Про", "Досвід", "Контакти"]
+    let linkNames = [
+        {name:"Головна", link:".."}, 
+        {name:"Про", link:"about"},
+        {name:"Досвід", link:"experience"}, 
+        {name:"Контакти", link:"contacts"}
+    ]
     
     let linkElementsHandler = () =>{
         let linkElements = [];
         for(let i = 0; i < linkNames.length; i++){
             if(i == props.activeIndex){
-                linkElements.push((<li className="text-black">{linkNames[i]}</li>))
+                linkElements.push((<li><a href={linkNames[i]["link"]} className="text-black">{linkNames[i]["name"]}</a></li>))
             } else{
-                linkElements.push((<li className="text-slate-400" value={i}>{linkNames[i]}</li>))
+                linkElements.push((<li><a href={linkNames[i]["link"]} className="text-slate-400" value={i}>{linkNames[i]["name"]}</a></li>))
             }
             
         }

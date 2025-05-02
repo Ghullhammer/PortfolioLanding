@@ -8,7 +8,11 @@ export default function Home() {
   return (
     <div className="">
       <Header activeIndex={0} />
-      <BigSlide backColor={"#FFAA00"}/>
+      <BigSlide backColor={"#FFAA00"} labelText={"Головна."} labelDesc = {"Фулл-стек програміст з Одеси, Україна"}>
+        <button className="bg-black text-white px-4 py-2 border border-white text-2xl">
+          Зв’яжись зі мною!
+        </button>
+      </BigSlide>
       <div className="flex flex-col justify-center items-center h-[100svh] bg-white pt-20 gap-5 drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)]">
         <div className="text-4xl font-martian-mono " >Останні роботи</div>
         <div className="flex flex-row gap-10">
