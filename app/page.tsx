@@ -2,14 +2,14 @@ import Image from "next/image";
 import Header from "@/components/Header"
 import BigSlide from "@/components/BigSlide"
 import BoxCard from "@/components/BoxCard"
-
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
     <div className="">
       <Header activeIndex={0} />
       <BigSlide backColor={"#FFAA00"}/>
-      <div className="flex flex-col justify-center items-center h-[70svh] bg-white pt-20 gap-5">
+      <div className="flex flex-col justify-center items-center h-[100svh] bg-white pt-20 gap-5 drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)]">
         <div className="text-4xl font-martian-mono " >Останні роботи</div>
         <div className="flex flex-row gap-10">
          
@@ -28,6 +28,8 @@ export default function Home() {
 
         </div>
       </div>
+      <Footer/>
+
     </div>
   );
 }
