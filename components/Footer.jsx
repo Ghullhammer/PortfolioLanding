@@ -13,7 +13,7 @@ export default function Footer(){
                 <li>Головна</li>
                 <li>Про</li>
                 <li>Досвід</li>
-                <li>Контакти</li>
+                <li>Контакти`</li>
             </ul>
         
         </div>

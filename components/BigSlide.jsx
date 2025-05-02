@@ -17,7 +17,7 @@ export default function BigSlide(props){
                         
                     </div>
                     <div className="justify-start items-start">
-                        <img src={props.imgSrc} className="flex bg-black w-160 items-start h-80 justify-start "></img>
+                        <img src={props.imgSrc} className="flex bg-black w-160 items-start h-80 justify-start " alt = "big slide description"></img>
                     </div>
                     
 

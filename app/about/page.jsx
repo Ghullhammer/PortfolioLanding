@@ -46,7 +46,7 @@ export default function About(){
                     </div>
                 </div>
                 <div className="inline-grid grid-cols-2 gap-4 px-10">
-                        <img className="w-[40vw] h-[40vh] bg-slate-400" src="https://i.fbcd.co/products/original/sun-boho-neutral-minimalism-high-resolution-wall-art-with-300dpi-wall-print-wall-decor-c16f5fd71022cbec6e6dc84d67f006eee9be691682f33af9b5f29a8a53dbafc5.jpg"></img>
+                        <img className="w-[40vw] h-[40vh] bg-slate-400" src="https://i.fbcd.co/products/original/sun-boho-neutral-minimalism-high-resolution-wall-art-with-300dpi-wall-print-wall-decor-c16f5fd71022cbec6e6dc84d67f006eee9be691682f33af9b5f29a8a53dbafc5.jpg" alt = "about image description"></img>
                         <div className="text-4xl font-martian-mono">
                             Я - <span className="font-semibold">студент</span> за спеціальністю "Інженерія програмного забезпечення" у <a className="text-[#00AEFF] font-semibold" href="https://www.nau.edu.ua/">Національному універститі "Одеська політехніка"</a>. Маю досвід роботи з <span className="font-semibold">JavaScript</span>, <span className="font-semibold">Python</span> та іншими мовами програмування. Маю досвід роботи з <span className="font-semibold">React</span>, <span className="font-semibold">Next.js</span>, <span className="font-semibold">Flask</span> та іншими фреймворками. Маю досвід роботи з <span className="font-semibold">PostgreSQL</span>
 
