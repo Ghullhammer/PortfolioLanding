@@ -4,7 +4,8 @@ export default function BigSlide(props){
     return (
         <div className = "">
             <div className="relative">
-                <div className={`flex text-black px-60 py-16 text-left h-[70%] justify-between  `} style={{ backgroundColor: props.backColor }}>
+                <div className={`flex text-black px-60 py-16 text-left min-h-[600px] justify-between`} style={{ backgroundColor: props.backColor }}>
+
                     <div>
                         <h1 className="text-9xl font-bold mb-4">{props.labelText}</h1>
                         <p className="font-mono text-2xl mb-6 ">
@@ -15,18 +16,18 @@ export default function BigSlide(props){
                         </div>
                         
                     </div>
-                    <div className="justify-center items-center self-center">
-                        <div className="flex bg-black w-160 h-80 "></div>
+                    <div className="justify-start items-start">
+                        <img src={props.imgSrc} className="flex bg-black w-160 items-start h-80 justify-start "></img>
                     </div>
                     
 
 
                 </div>
-                <div className={`clip-custom h-40 w-full absolute left-0 top-[100%] z-1 pointer-events-none`} style={{ backgroundColor: props.backColor }}></div>
+                <div className={`clip-custom h-40 w-full absolute left-0 top-[100%] z-2 pointer-events-none `} style={{ backgroundColor: props.backColor }}></div>
             </div>
             
             
-            <div className="h-10 bg-[#4D4D4D] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] shadow-2xl z-0"></div>
+            <div className="h-10 bg-[#4D4D4D] z-10 border-b-4 border-[#242323]"></div>
         </div>
     )
 }

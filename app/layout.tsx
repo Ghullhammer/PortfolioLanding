@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Martian_Mono, Monomaniac_One } from "next/font/google";
+import { Geist, Geist_Mono, Martian_Mono, Monomaniac_One, Fira_Code } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,6 +23,13 @@ const monomaniacOne = Monomaniac_One({
   weight: "400"
 });
 
+const firaCode = Fira_Code({
+  variable: "--font-fira-code",
+  subsets: ["latin"],
+});
+
+
+
 export const metadata: Metadata = {
   title: "Lab4: Portfolio",
   description: "Programmer portfolio",
@@ -36,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${martianMono.variable} ${monomaniacOne.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${martianMono.variable} ${monomaniacOne.variable} ${firaCode.variable} antialiased`}
       >
         {children}
       </body>

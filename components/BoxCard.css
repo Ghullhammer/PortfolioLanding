@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .flex-row {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+  
+    .w-full {
+      max-width: 90%; /* Reduce card width */
+    }
+  
+    .text-2xl {
+      font-size: 1.25rem; /* Adjust font size */
+    }
+  }

@@ -13,9 +13,9 @@ export default function Header(props){
         let linkElements = [];
         for(let i = 0; i < linkNames.length; i++){
             if(i == props.activeIndex){
-                linkElements.push((<li><a href={linkNames[i]["link"]} className="text-black">{linkNames[i]["name"]}</a></li>))
+                linkElements.push((<li key={i}><a href={linkNames[i]["link"]} className="text-black">{linkNames[i]["name"]}</a></li>))
             } else{
-                linkElements.push((<li><a href={linkNames[i]["link"]} className="text-slate-400" value={i}>{linkNames[i]["name"]}</a></li>))
+                linkElements.push((<li key={i}><a href={linkNames[i]["link"]} className="text-slate-400">{linkNames[i]["name"]}</a></li>))
             }
             
         }
@@ -26,7 +26,7 @@ export default function Header(props){
     return(
         <div className="bg-white w-full h-21 flex justify-between px-25 ">
             <div className="flex font-[family-name:var(--font-monomaniac-one)] text-6xl h-full  items-center gap-8">
-                <a className="h-15 w-15 bg-slate-400 self-alight-center"></a>
+                <a className="h-15 w-15 self-alight-center" style={{background:props.backColor}}>🕶</a>
                 <a className="pb-2">Yury</a>
                 
                 
