@@ -1,6 +1,22 @@
 
 
-export default function Header(){
+export default function Header(props){
+
+    let linkNames = ["Головна", "Про", "Досвід", "Контакти"]
+    
+    let linkElementsHandler = () =>{
+        let linkElements = [];
+        for(let i = 0; i < linkNames.length; i++){
+            if(i == props.activeIndex){
+                linkElements.push((<li className="text-black">{linkNames[i]}</li>))
+            } else{
+                linkElements.push((<li className="text-slate-400" value={i}>{linkNames[i]}</li>))
+            }
+            
+        }
+        return linkElements;
+    }
+    
 
     return(
         <div className="bg-white w-full h-21 flex justify-between px-25 ">
@@ -11,10 +27,7 @@ export default function Header(){
                 
             </div>
             <ul className="flex gap-10 text-2xl font-[family-name:var(--font-martian-mono)] h-full items-center">
-                <li>Головна</li>
-                <li>Про</li>
-                <li>Досвід</li>
-                <li>Контакти</li>
+                {linkElementsHandler()}
             </ul>
         
         </div>
