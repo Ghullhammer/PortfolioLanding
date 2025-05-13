@@ -4,10 +4,10 @@ export default function BigSlide(props){
     return (
         <div className = "">
             <div className="relative">
-                <div className={`flex text-black px-60 py-16 text-left min-h-[600px] justify-between`} style={{ backgroundColor: props.backColor }}>
+                <div className={`flex text-black px-4 sm:px-8 md:px-16 lg:px-32 xl:px-60 py-16 text-left min-h-[600px] justify-between`} style={{ backgroundColor: props.backColor }}>
 
                     <div>
-                        <h1 className="text-9xl font-bold mb-4">{props.labelText}</h1>
+                        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold mb-4">{props.labelText}</h1>
                         <p className="font-mono text-2xl mb-6 ">
                             {props.labelDesc}
                         </p>
@@ -17,7 +17,7 @@ export default function BigSlide(props){
                         
                     </div>
                     <div className="justify-start items-start">
-                        <img src={props.imgSrc} className="flex bg-black w-160 items-start h-80 justify-start " alt = "big slide description"></img>
+                        <img src={props.imgSrc} className=" bg-black w-160 items-start h-80 justify-start hidden 2xl:flex" alt = "big slide description"></img>
                     </div>
                     
 

@@ -31,7 +31,7 @@ const firaCode = Fira_Code({
 
 
 export const metadata: Metadata = {
-  title: "Lab4: Portfolio",
+  title: "Lab4-5: Portfolio",
   description: "Programmer portfolio",
 };
 
@@ -42,6 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${martianMono.variable} ${monomaniacOne.variable} ${firaCode.variable} antialiased`}
       >

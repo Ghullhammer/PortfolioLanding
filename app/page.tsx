@@ -13,9 +13,9 @@ export default function Home() {
           Зв’яжись зі мною!
         </button>
       </BigSlide>
-      <div className="flex flex-col justify-center items-center h-[100svh] bg-white pt-40 gap-5 ">
+      <div className="flex flex-col justify-center items-center h-auto bg-white py-40 gap-5 ">
         <div className="text-4xl font-martian-mono " >Останні роботи</div>
-        <div className="flex flex-col md:flex-row gap-10 flex-wrap ">
+        <div className="flex flex-col xl:flex-row gap-10 flex-wrap w-full items-center xl:items-stretch">
          
           <BoxCard label="Перша робота" imageLink="https://i.pinimg.com/236x/c8/cc/24/c8cc24bba37a25c009647b8875aae0e3.jpg" 
             description="Опис першої роботи. Найкраща комерційна робота в портфолі, що ще не відбулась =("
