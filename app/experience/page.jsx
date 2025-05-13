@@ -29,30 +29,33 @@ export default function Experience() {
 
 
 
-        <div className="font-martian-mono bg-white h-[80vh] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] pt-40 px-10">
-          <table className="text-center table-auto w-full border-collapse border-gray-300 text-2xl">
-            <thead>
-              <tr className="bg-gray-100 ">
-                <th className="border-t-2 border-gray-300 px-4 py-2">Замовник</th>
-                <th className="border-t-2 border-gray-300 px-4 py-2">Назва</th>
-                <th className="border-t-2 border-gray-300 px-4 py-2">Опис</th>
-                <th className="border-t-2 border-gray-300 px-4 py-2">Фреймворк</th>
-                <th className="border-t-2 border-gray-300 px-4 py-2">Рік</th>
-              </tr>
-            </thead>
-            <tbody>
-              {projects.map((project) => (
-                <tr key={project.id} className="hover:bg-gray-50">
-                  <td className="border-t-2  border-b-2 border-gray-300 px-4 py-2">{project.client}</td>
-                  <td className="border-t-2 border-b-2 border-gray-300 px-4 py-2">{project.name}</td>
-                  <td className="border-t-2 border-b-2 border-gray-300 px-4 py-2">{project.description}</td>
-                  <td className="border-t-2 border-b-2 border-gray-300 px-4 py-2">{project.framework}</td>
-                  <td className="border-t-2 border-b-2 border-gray-300 px-4 py-2">{project.year}</td>
+        <div className="font-martian-mono bg-white min-h-[80vh] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] pt-40 px-4 sm:px-10">
+          <div className="overflow-x-auto w-full">
+            <table className="min-w-max text-center table-auto border-collapse border-gray-300 text-base sm:text-lg md:text-2xl w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border-t-2 border-gray-300 px-4 py-2">Замовник</th>
+                  <th className="border-t-2 border-gray-300 px-4 py-2">Назва</th>
+                  <th className="border-t-2 border-gray-300 px-4 py-2">Опис</th>
+                  <th className="border-t-2 border-gray-300 px-4 py-2">Фреймворк</th>
+                  <th className="border-t-2 border-gray-300 px-4 py-2">Рік</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {projects.map((project) => (
+                  <tr key={project.id} className="hover:bg-gray-50">
+                    <td className="border-t-2 border-b-2 border-gray-300 px-4 py-2">{project.client}</td>
+                    <td className="border-t-2 border-b-2 border-gray-300 px-4 py-2">{project.name}</td>
+                    <td className="border-t-2 border-b-2 border-gray-300 px-4 py-2">{project.description}</td>
+                    <td className="border-t-2 border-b-2 border-gray-300 px-4 py-2">{project.framework}</td>
+                    <td className="border-t-2 border-b-2 border-gray-300 px-4 py-2">{project.year}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
+
         <Footer />
       </>
     );

@@ -31,7 +31,7 @@ export default function Header(props){
                 
                 
             </div>
-            <ul className="flex flex-col xl:flex-row gap-10 xl:text-2xl text-xl font-[family-name:var(--font-martian-mono)] h-full items-center">
+            <ul className="flex flex-col xl:flex-row gap-10 xl:text-2xl text-xl font-[family-name:var(--font-martian-mono)] items-center">
                 {linkElementsHandler()}
             </ul>
         
