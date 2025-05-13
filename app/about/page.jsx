@@ -38,7 +38,7 @@ export default function About(){
                 </button>
             </BigSlide>
 
-            <div className="bg-white h-[90svh] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] border-slate-200 border-b-3">
+            <div className="bg-white drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] border-slate-200 border-b-3">
                 <div className="flex flex-row h-[30svh] pt-10 px-10 pb-5 items-end w-full">
                     <div className="items-center flex flex-row w-full gap-10">
                         <a className="font-martian-mono text-4xl">Біографія</a>
@@ -53,7 +53,7 @@ export default function About(){
                     </div>
                 </div>
 
-            <div className="bg-white h-[90svh] drop-shadow-[0px_4px_8px_rgba(0,0,0,0.25)] border-slate-200 border-b-3">
+            <div className="bg-white drop-shadow-[0px_4px_8px_rgba(0,0,0,0.25)] border-slate-200 border-b-3">
                 <div className="flex flex-row h-[30svh] pt-10 px-10 pb-5 items-end w-full">
                     <div className="items-center flex flex-row w-full justify-end gap-10">
                     <div className="flex bg-[#00AEFF] h-2 w-[50%] items-center"></div>
@@ -65,9 +65,9 @@ export default function About(){
                 </div>
             </div>
 
-            <div className="bg-white h-[80vh] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] py-10">
+            <div className="bg-white h-[80svh] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] py-10">
                 <div className="mx-auto text-5xl w-full px-auto text-center font-semibold font-fira-code">Фан факти</div>
-                <div className="relative w-full h-[100vh]">
+                <div className="relative w-full ">
                     {facts.map((fact, index) => (
                         <div
                         key={index}
