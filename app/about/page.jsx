@@ -38,7 +38,7 @@ export default function About(){
                 </button>
             </BigSlide>
 
-            <div className="bg-white drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] border-slate-200 border-b-3">
+            <div className="bg-white drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] border-slate-200 border-b-3 py-40">
                 <div className="flex flex-row h-[30svh] pt-10 px-10 pb-5 items-end w-full">
                     <div className="items-center flex flex-row w-full gap-10">
                         <a className="font-martian-mono text-4xl">Біографія</a>
@@ -53,8 +53,8 @@ export default function About(){
                     </div>
                 </div>
 
-            <div className="bg-white drop-shadow-[0px_4px_8px_rgba(0,0,0,0.25)] border-slate-200 border-b-3">
-                <div className="flex flex-row h-[30svh] pt-10 px-10 pb-5 items-end w-full">
+            <div className="bg-white drop-shadow-[0px_4px_8px_rgba(0,0,0,0.25)] border-slate-200 border-b-3 py-40">
+                <div className="flex flex-row px-10 pb-5 items-end w-full">
                     <div className="items-center flex flex-row w-full justify-end gap-10">
                     <div className="flex bg-[#00AEFF] h-2 w-[50%] items-center"></div>
                     <a className="font-martian-mono text-4xl">Навички</a>
@@ -71,10 +71,10 @@ export default function About(){
                     {facts.map((fact, index) => (
                         <div
                         key={index}
-                        className="absolute bg-white border border-gray-300 p-2 text-lg xl:text-4xl font-fira-code"
+                        className="absolute bg-white border border-gray-300 p-2 text-sm xl:text-4xl font-fira-code"
                         style={{
-                            top: `${Math.random() * 60}vh`,
-                            left: `${Math.random() * 60}vw`, 
+                            top: `${Math.random() * 40}vh`,
+                            left: `${Math.random() * 40}vw`, 
                         }}
                         >
                         {fact}
