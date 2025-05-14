@@ -15,7 +15,7 @@ export default function Home() {
       </BigSlide>
       <div className="flex flex-col justify-center items-center h-auto bg-white py-40 gap-5 ">
         <div className="text-4xl font-martian-mono " >Останні роботи</div>
-        <div className="flex flex-col xl:flex-row gap-10 flex-wrap w-full items-center xl:items-stretch">
+        <div className="flex flex-col  xl:justify-center xl:flex-row gap-10 flex-wrap w-full items-center xl:items-stretch">
          
           <BoxCard label="Перша робота" imageLink="https://i.pinimg.com/236x/c8/cc/24/c8cc24bba37a25c009647b8875aae0e3.jpg" 
             description="Опис першої роботи. Найкраща комерційна робота в портфолі, що ще не відбулась =("
