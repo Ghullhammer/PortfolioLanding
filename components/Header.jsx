@@ -6,7 +6,7 @@ export default function Header(props){
         {name:"Головна", link:".."}, 
         {name:"Про", link:"about"},
         {name:"Досвід", link:"experience"}, 
-        {name:"❌Контакти❌", link:"contacts"}
+        {name:"Контакти", link:"contacts"}
     ]
     
     let linkElementsHandler = () =>{
